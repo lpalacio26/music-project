@@ -48,13 +48,25 @@ def musician_creator():
     return Musician(name, gender, bands, genres, instruments)
 
 
+def show_musician(musician):
+
+    print('NAME: ' + musician.name)
+    print('GENDER:' + musician.gender)
+    bands = ""
+    for i in musician.bands:
+        bands += i + ' - '
+    print('BANDS: ' + bands)
+
+    instruments = ""
+    for i in musician.instruments:
+        instruments += i + ' - '
+    print('INSTRUMENTS: ' + instruments)
+
+    genres = ""
+    for i in musician.genre:
+        genres += i + ' - '
+    print('GENRES: ' + genres)
+
 x = musician_creator()
 
-print(x.bands)
-
-
-
-
-
-
-
+show_musician(x)
