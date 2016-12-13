@@ -51,7 +51,7 @@ def musician_creator():
 def show_musician(musician):
 
     print('NAME: ' + musician.name)
-    print('GENDER:' + musician.gender)
+    print('GENDER: ' + musician.gender)
     bands = ""
     for i in musician.bands:
         bands += i + ' - '
